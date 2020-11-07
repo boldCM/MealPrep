@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function HeaderComponent() {
+export default function WeekPlan() {
   return <div>Ich bin der Wochenplan!</div>;
 }
