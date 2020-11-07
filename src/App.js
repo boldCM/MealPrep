@@ -11,10 +11,10 @@ function App() {
     <>
       <Router>
         <GlobalStyle />
+
+        <HeaderComponent />
+
         <Switch>
-          <Route exact path="/">
-            <HeaderComponent />
-          </Route>
           <Route path="/GrocerieList">
             <GrocerieList />
           </Route>
