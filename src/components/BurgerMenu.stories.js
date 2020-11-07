@@ -1,16 +1,16 @@
 import React from 'react';
 
-import Button from './Button';
+import BurgerMenu from './BurgerMenu';
 
 export default {
   title: 'Example/Button',
-  component: Button,
+  // component: BurgerMenu,
   argTypes: {
     backgroundColor: { control: 'color' },
   },
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => <BurgerMenu {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
