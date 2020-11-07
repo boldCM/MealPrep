@@ -1,4 +1,5 @@
 import React from 'react';
+import { useParams, Link } from 'react-router-dom';
 import styled from 'styled-components/macro';
 import burgerMenuBlack from '../icons/burgerMenuBlack.svg';
 
@@ -12,16 +13,18 @@ const BurgerMenuBlack = styled.button`
     background-color: orange;
   }
 `;
+// const { GrocerieList } = useParams();
+// const handleClick = () => {
 
-const handleClick = () => {
-  alert('Hallo du!');
-};
+// };
 
 export default function BurgerMenu() {
   return (
     <>
-      <BurgerMenuBlack onClick={handleClick}>
-        <img src={burgerMenuBlack} alt="Burger Menu" />
+      <BurgerMenuBlack>
+        <Link to="/GrocerieList">
+          <img src={burgerMenuBlack} alt="Burger Menu" />
+        </Link>
       </BurgerMenuBlack>
     </>
   );

@@ -12,6 +12,9 @@ function App() {
       <Router>
         <GlobalStyle />
         <Switch>
+          <Route exact path="/">
+            <HeaderComponent />
+          </Route>
           <Route path="/GrocerieList">
             <GrocerieList />
           </Route>
@@ -20,9 +23,6 @@ function App() {
           </Route>
           <Route path="/WeekPlan">
             <WeekPlan />
-          </Route>
-          <Route path="/">
-            <HeaderComponent />
           </Route>
         </Switch>
       </Router>
