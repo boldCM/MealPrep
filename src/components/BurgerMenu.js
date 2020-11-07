@@ -13,10 +13,14 @@ const BurgerMenuBlack = styled.button`
   }
 `;
 
+const handleClick = () => {
+  alert('Hallo du!');
+};
+
 export default function BurgerMenu() {
   return (
     <>
-      <BurgerMenuBlack>
+      <BurgerMenuBlack onClick={handleClick}>
         <img src={burgerMenuBlack} alt="Burger Menu" />
       </BurgerMenuBlack>
     </>
